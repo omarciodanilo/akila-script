@@ -10,11 +10,11 @@ cd akila-script
 
 chmod +x akila-install
 
--> colocando script para inicia junto com Sistema
+###colocando script para inicia junto com Sistema
 
 sudo mv akila-install /usr/bin
 
--> So abri terminal e chama script
+###So abri terminal e chama script
 
 sudo akila-install
 
