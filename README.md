@@ -42,4 +42,4 @@ Akila Project vem para facilitar a vida do usuario que esta iniciando no Linux, 
 #AJUDE O PROJETO
 [GitHub](https://github.com/walber-silva/akila-script)
 
-(COPY) 2015 General Public License GPL
+Copyright (c) 2015 General Public License GPL
