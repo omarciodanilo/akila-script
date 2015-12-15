@@ -18,9 +18,6 @@ sudo mv akila-install /usr/bin
 
 sudo akila-install
 
-#AJUDE O PROJETO
-[GitHub](https://github.com/walber-silva/akila-script)
-
 #DESCRIÇÃO
 Akila Project vem para facilitar a vida do usuario que esta iniciando no Linux, mas tambem para o usuario avançado. Com isso trará facilidade na instalação de programas com mais rapidez sem que você precise pesquisar por tutoriais na internet. Ele vem com uma grande quatidade de programas para serem instalados:
 
@@ -42,3 +39,5 @@ Akila Project vem para facilitar a vida do usuario que esta iniciando no Linux, 
 - GCC - COMPILADOR
 - INKSCAPE - MAIS RECENTE STABLE
 
+#AJUDE O PROJETO
+[GitHub](https://github.com/walber-silva/akila-script)
