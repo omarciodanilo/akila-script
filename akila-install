@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 #================================================================
 #					AKILA SCRIPT INSTALL
-#
-#
-#
-#
+# PROJETO VOLTADO PARA FACILITA A INSTALAÇÂO DE PROGRAMAS
+# EXTRAS NO UBUNTU E SEUS DERIVADOS.
+# OS: Ubuntu, Linux mint, Elementary OS.......
+# GITHUB: https://github.com/walber-silva/akila-script
 #================================================================
 clear
 #VERIFICAÇÃO ROOT {{{
