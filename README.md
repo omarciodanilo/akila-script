@@ -19,4 +19,4 @@ sudo mv akila-install /usr/bin
 sudo akila-install
 
 ###AJUDE O PROJETO
-https://github.com/walber-silva/akila-script
+[GitHub](https://github.com/walber-silva/akila-script)
