@@ -8,10 +8,15 @@ git clone https://github.com/walber-silva/akila-script
 
 cd akila-script
 
-sudo ./akila-install
+chmod +x akila-install
+
+-> colocando script para inicia junto com Sistema
+
+sudo mv akila-install /usr/bin
+
+-> So abri terminal e chama script
+
+sudo akila-install
 
 ###AJUDE O PROJETO
 https://github.com/walber-silva/akila-script
-
-
-
