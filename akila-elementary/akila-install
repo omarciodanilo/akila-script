@@ -1,0 +1,48 @@
+#!/bin/bash
+#-*- coding: utf-8 -*-
+#================================================================
+#				AKILA SCRIPT INSTALL - ELEMENTARY OS
+# Akila-eOS exclusivamente para elementary os, instalado pacotes 
+# extras para elementary.
+# Version: 1.0
+# Author: Walber Vaz
+# GitHub: https://github.com/walber-silva/akila-eos
+# -> Conheça nosso outro projeto para Ubuntu e seus derivados
+# GitHub: https://github.com/walber-silva/akila-script
+#================================================================
+clear
+#VERIFICAÇÃO ROOT {{{
+select_root(){
+	if [[ ! $(whoami) = "root" ]]; then
+		echo "********************************************************************************"
+    	echo "OPS!VOCÊ TEM QUE EXECUTAR SCRIPT COMO ROOT"
+		echo "********************************************************************************"
+    	exit 1
+	fi
+}
+#}}}
+#FUNÇÃO PARA GERA OPÇÃO ESCOLHIDA PELO USUARIO {{{
+select_op(){
+
+}
+#}}}
+#TELA DE OPÇÕES PARA USUARIO {{{
+tela_opcoes(){
+	echo "================================================================================"
+	echo "AKILA eOS - EXCLUSIVO PARA ELEMENTARY OS ¯\_(ツ)_/¯"
+	echo "================================================================================"
+	echo "[1]			[11]"
+	echo "[2]			[12]"
+	echo "[3]			[13]"
+	echo "[4]     [14]"
+	echo "[5]			[15]"
+	echo "[6] 		[16]"
+	echo "[7]   	[17]"
+	echo "[8] 		[18]"
+	echo "[9] 		[19]"
+	echo "[10]		[20]"
+	echo "================================================================================"
+	read -p "DIGITE [1 a 20] -> " op
+	echo
+}
+#}}}
