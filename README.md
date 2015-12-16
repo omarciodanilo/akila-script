@@ -80,7 +80,7 @@ Programas:
 - GIMP
 
 ###ATENÇÃO!
-###Script esta em Desenvolvimento NÃO BAIXE AINDA
+Script akila-elementary esta em Desenvolvimento não use ainda
 
 ###Instalação Akila Elementary OS
 
