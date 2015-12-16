@@ -79,7 +79,8 @@ Programas:
 - BLENDER
 - GIMP
 
-###ATENÇÃO!Script esta em Desenvolvimento NÃO BAIXE AINDA
+###ATENÇÃO!
+###Script esta em Desenvolvimento NÃO BAIXE AINDA
 
 ###Instalação Akila Elementary OS
 
