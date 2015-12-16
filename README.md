@@ -2,7 +2,7 @@
 
 Script de instalaçao de pacotes extras para ubuntu e seus derivados.
 
-#Akila-Ubuntu
+###Akila-Ubuntu
 Programas:
 
 - CODES
@@ -23,11 +23,34 @@ Programas:
 - GCC - COMPILADOR
 - INKSCAPE - MAIS RECENTE STABLE
 
-##Instalação Akila Ubuntu
+###Instalação Akila Ubuntu
 
 git clone https://github.com/walber-silva/akila-script
 
 cd akila-script/akila-ubuntu
+
+chmod +x akila-install
+
+###Colocando script para inicia junto com Sistema
+
+sudo mv akila-install /usr/bin
+
+###So abri terminal e chama script
+
+sudo akila-install
+
+###Akila Elementary
+Script exclusivo para Elementary OS, Para ajuda a instalar Programas extras.
+
+Programas:
+
+*Script esta em Desemvolvimento
+
+###Instalação Akila Ubuntu
+
+git clone https://github.com/walber-silva/akila-script
+
+cd akila-script/akila-elementary
 
 chmod +x akila-install
 
