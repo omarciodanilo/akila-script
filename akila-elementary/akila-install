@@ -22,27 +22,40 @@ select_root(){
 }
 #}}}
 #FUNÇÃO PARA GERA OPÇÃO ESCOLHIDA PELO USUARIO {{{
-select_op(){
+#select_op(){
 
-}
+#}
 #}}}
 #TELA DE OPÇÕES PARA USUARIO {{{
 tela_opcoes(){
 	echo "================================================================================"
 	echo "AKILA eOS - EXCLUSIVO PARA ELEMENTARY OS ¯\_(ツ)_/¯"
 	echo "================================================================================"
-	echo "[1]			[11]"
-	echo "[2]			[12]"
-	echo "[3]			[13]"
-	echo "[4]     [14]"
-	echo "[5]			[15]"
-	echo "[6] 		[16]"
-	echo "[7]   	[17]"
-	echo "[8] 		[18]"
-	echo "[9] 		[19]"
-	echo "[10]		[20]"
+	echo "[1]CODEC EXTRAS				[19]ATOM EDITOR DE TEXTO"
+	echo "[2]PROGRAMAS EXTRAS(p7zip, rar..etc)	[20]BRACKETS EDITOR DE TEXTO"
+	echo "[3]FIREFOX				[21]SUBLIME TEXT EDITOR DE TEXTO"
+	echo "[4]GDEBI(INSTALADOR ARQUIVOS .deb)	[22]JAVA(ORACLE)"
+	echo "[5]UBUNTU TWEAK				[23]OPENJDK(JAVA)"
+	echo "[6]UNETBOOTIN				[24]THUNDERBIRD"
+	echo "[7]ATUALIZAR SISTEMA			[25]ELEMENTARY TWEAKS"
+	echo "[8]REMOVE PACOTES			[26]GCC(COMPILADOR)"
+	echo "[9]INSTALAR LIBREOFFICE 		[27]INKSCAPE"
+	echo "[10]NUMIX ICON				[28]GPARTED"
+	echo "[11]EL FAENZA ICON 			[29]TRANSMISSION"
+	echo "[12]NUMIX UTOUCH ICON 			[30]GUFW(FIREWALL)"
+	echo "[13]TAP ICON 				[31]MONITORAMENTO DO SYSTEMA"
+	echo "[14]MOKA ICON 				[32]DEIXANDO eOS EM PT-BR"
+	echo "[15]WINE 				[33]FONTES EXTRAS"
+	echo "[16]SIMPLESCREENRECORDER 		[34]BLENDER"
+	echo "[18]ULTILIDARIO DE PARTIÇÕES 		[35]GIMP"
+	echo "					[36]SAIR"
 	echo "================================================================================"
-	read -p "DIGITE [1 a 20] -> " op
+	read -p "DIGITE [1 a 36] -> " op
 	echo
 }
+#}}}
+#CHAMANDO TODAS AS FUNÇÔES {{{
+select_root
+tela_opcoes
+select_op
 #}}}
