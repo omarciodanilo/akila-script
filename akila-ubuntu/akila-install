@@ -232,8 +232,8 @@ case $op in
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
 		read -p "DIGITE NOME DO PACOTE PARA SER REMOVIDO -> " pack
-		echo "DESEJA REMOVE PACOTE $pack?[s/n]"
-		case $pack in
+		read -p "DESEJA REMOVE PACOTE $pack?[s/n] -> " packr
+		case $packr in
 			S|s)
 				echo
 				apt-get purge $pack
