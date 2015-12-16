@@ -1,8 +1,8 @@
-#AKILA PROJET
+#Akila Ubuntu
 
 Script de instalaçao pacotes extras para ubuntu e seus derivados 
 
-###INSTALAÇÂO
+###Instalação
 
 git clone https://github.com/walber-silva/akila-script
 
@@ -10,7 +10,7 @@ cd akila-script
 
 chmod +x akila-install
 
-###colocando script para inicia junto com Sistema
+###Colocando script para inicia junto com Sistema
 
 sudo mv akila-install /usr/bin
 
@@ -18,7 +18,7 @@ sudo mv akila-install /usr/bin
 
 sudo akila-install
 
-#DESCRIÇÃO
+#Descrição
 Akila Project vem para facilitar a vida do usuario que esta iniciando no Linux, mas tambem para o usuario avançado. Com isso trará facilidade na instalação de programas com mais rapidez sem que você precise pesquisar por tutoriais na internet. Ele vem com uma grande quatidade de programas para serem instalados:
 
 - CODES
