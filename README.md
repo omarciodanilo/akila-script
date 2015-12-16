@@ -44,7 +44,7 @@ Script exclusivo para Elementary OS, Para ajuda a instalar Programas extras.
 
 Programas:
 
-*Script esta em Desemvolvimento
+*Script esta em Desenvolvimento
 
 ###Instalação Akila Elementary OS
 
