@@ -46,7 +46,7 @@ Programas:
 
 *Script esta em Desemvolvimento
 
-###Instalação Akila Ubuntu
+###Instalação Akila Elementary OS
 
 git clone https://github.com/walber-silva/akila-script
 
