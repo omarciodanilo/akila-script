@@ -5,7 +5,7 @@ Script de instalaçao de pacotes extras para ubuntu e seus derivados.
 ###Akila-Ubuntu
 Programas:
 
-- CODES
+- CODECS
 - GDEBI
 - UBUNTU TWEAK
 - UNETBOOTIN
