@@ -56,7 +56,7 @@ Programas:
 - NUMIX ICON
 - EL FAENZA ICON
 - NUMIX UTOUCH ICON
-- TAP ICON
+- NUMIX SHINE ICON
 - MOKA ICON
 - WINE
 - SIMPLESCREENRECORDER
@@ -78,9 +78,6 @@ Programas:
 - FONTES EXTRAS
 - BLENDER
 - GIMP
-
-###ATENÇÃO!
-Script akila-elementary esta em Desenvolvimento não use ainda
 
 ###Instalação Akila Elementary OS
 
