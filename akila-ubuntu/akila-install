@@ -277,7 +277,7 @@ case $op in
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
-		add-apt-repository ppa:libreoffice/ppa -y && apt-get update && apt-get dist-update
+		add-apt-repository ppa:libreoffice/ppa -y && apt-get update && apt-get dist-upgrade -y
 		echo
 		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
 		read -p "DIGITE: " esc
