@@ -22,35 +22,1060 @@ select_root(){
 }
 #}}}
 #FUNÇÃO PARA GERA OPÇÃO ESCOLHIDA PELO USUARIO {{{
-#select_op(){
-
-#}
+select_op(){
+case $op in
+    1)  #INSTALANDO CODES
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================" 
+        apt-get install ubuntu-restricted-extras ubuntu-restricted-addons gstreamer0.10-plugins-bad-multiverse libavcodec-extra-54 gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad
+gstreamer0.10-ffmpeg dvd+rw-tools -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    2)  #INSTALANDO PROGRAMAS EXTRAS
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install unace rar unrar zip unzip p7zip-full p7zip-rar arj p7zip sharutils uudeview mpack arj cabextract file-roller lzip lunzip axel gksu ntfs-config unace-nonfree cheese -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    3)  #INSTALANDO FIREFOX
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install firefox firefox-locale-pt -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    4)  #INSTALANDO GDEBI
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install gdebi -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    5)  #INSTALANDO UBUNTU TWEAK
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:tualatrix/ppa -y && apt-get update && apt-get install ubuntu-tweak -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    6)  #INSTALANDO UNETBOOTIN
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:gezakovacs/ppa && apt-get update && apt-get install unetbootin -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    7)  #INSTALANDO ATUALIZAR SISTEMA
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get update && apt-get upgrade -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    8)  #REMOVE PACOTES
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        read -p "DIGITE NOME DO PACOTE PARA SER REMOVIDO -> " pack
+		read -p "DESEJA REMOVE PACOTE $pack?[s/n] -> " packr
+		case $packr in
+			S|s)
+				echo
+				apt-get purge $pack
+				;;
+			N|n)
+			 	sleep 2
+				tela_opcoes
+				select_op
+				;;
+			  *)
+			  	echo "DIGITOU A OPÇÃO ERRADA TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+    9)  #INSTALANDO LIBREOFFICE
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:libreoffice/ppa -y && apt-get update && apt-get install libreoffice libreoffice-l10n-pt-br -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    10) #INSTALANDO NUMIX ICON
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-add-repository ppa:numix/ppa -y && apt-get update && apt-get install numix-icon-theme-circle -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    11) #INSTALANDO EL FAENZA ICON
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:noobslab/icons -y && apt-get update && apt-get install faenza-icon-theme -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    12) #INSTALANDO NUMIX SHINE ICON
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install numix-icon-theme-shine -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    13) #INSTALANDO PACIFICA ICON
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:fsvh/pacifica-icon-theme -y && apt-get update && apt-get install pacifica-icon-theme -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    14) #INSTALANDO MOKA ICON
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-add-repository ppa:moka/stable -y && apt-get update && apt-get install faba-icon-theme moka-icon-theme faba-mono-icons -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    15) #INSTALANDO WINE
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-add-repository ppa:ubuntu-wine/ppa -y && apt-get update && apt-get install wine -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    16) #INSTALANDO SIMPLESSCREENRECODER
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-add-repository ppa:maarten-baert/simplescreenrecorder -y && apt-get update && apt-get install simplescreenrecorder simplescreenrecorder-lib:i386 -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    17) #INSTALANDO ULTILITARIO DE DISCO
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install gnome-system-monitor gksu
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    18) #INSTALANDO ATOM
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:webupd8team/atom -y && apt-get update && apt-get install atom -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    19) #INSTALANDO BRACKETS
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:webupd8team/brackets -y && apt-get update && apt-get install brackets -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    20) #INSTALANDO SUBLIME TEXT
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:webupd8team/sublime-text-3 -y && apt-get update && apt-get install sublime-text-installer -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    21) #INSTALANDO JAVA
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:webupd8team/java -y && apt-get update && apt-get install oracle-java8-installer -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    22) #INSTALANDO OPENJDK
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:openjdk-r/ppa -y && apt-get update && apt-get install openjdk-8-jre -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    23) #INSTALANDO THUNDERBIRD
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-add-repository ppa:mozillateam/thunderbird-next -y && apt-get update && apt-get install thunderbird -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    24) #INSTALANDO ELEMENTARY TWEAKS
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:mpstark/elementary-tweaks-daily -y && apt-get update && apt-get install elementary-tweaks -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    25) #INSTALANDO GCC
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install build-essential -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    26) #INSTALANDO INKSCAPE
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:inkscape.dev/stable -y && apt-get && apt-get install inkscape -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    27) #INSTALANDO GPARTED
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install gparted -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    28) #INSTALANDO TRANSMISSION
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-add-repository ppa:transmissionbt/ppa -y && apt-get update && apt-get install transmission -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    29) #INSTALANDO GUFW
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install gufw -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    30) #INSTALANDO MONITORAMENTO DO SISTEMA
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install gnome-system-monitor -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    31) #INSTALANDO PT_BR
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install language-pack-gnome-pt language-pack-gnome-pt-base -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    32) #INSTALANDO FONTES
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-get install ttf-mscorefonts-installer msttcorefonts ttf-xfree86-nonfree cabextract xfonts-terminus-dos xfonts-terminus xfonts-terminus-oblique tv-fonts ttf-tuffy ttf-sjfonts ttf-georgewilliams ttf-fifthhorseman-dkg-handwriting ttf-essays1743 ttf-freefont ttf-dejavu-extra ttf-dejavu-core ttf-dejavu ttf-bitstream-vera equivs ttf-aenigma -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    33) #INSTALANDO BLENDER
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        apt-add-repository ppa:irie/blender -y && apt-get update && apt-get install blender -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    34) #INSTALANDO GIMP
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        add-apt-repository ppa:otto-kesselgulasch/gimp -y && apt-get update && apt-get install gimp gimp-data-extras gimp-plugin-registry gimp-gmic -y
+        echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+    35) #SAINDO DO SCRIPT
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        echo
+		echo "OBRIGADO POR BAIXA NOSSO SCRIPT ✌ ¯\_(ツ)_/¯"
+        echo "VEJA MAIS PROJETOS -> GITHUB: https://github.com/walber-silva/akila-script"
+		sleep 2
+		exit
+		;;
+    *)  #TRATAMENTO DE ERRO
+        echo "================================================================================"
+		echo "AKILA eOS - ELEMENTARY OS ¯\_(ツ)_/¯"
+		echo "================================================================================"
+        echo "OPS!VOCÊ NÃO DIGITOU NUMERO CORRETO [1 a 20] OU"
+		echo "NÃO DIGITOU NENHUM NUMERO"
+		echo "TENTE NOVAMENTE!"
+		sleep 2
+		exit
+		;;
+esac
+}
 #}}}
 #TELA DE OPÇÕES PARA USUARIO {{{
 tela_opcoes(){
 	echo "================================================================================"
 	echo "AKILA eOS - EXCLUSIVO PARA ELEMENTARY OS ¯\_(ツ)_/¯"
 	echo "================================================================================"
-	echo "[1]CODEC EXTRAS				[19]ATOM EDITOR DE TEXTO"
-	echo "[2]PROGRAMAS EXTRAS(p7zip, rar..etc)	[20]BRACKETS EDITOR DE TEXTO"
-	echo "[3]FIREFOX				[21]SUBLIME TEXT EDITOR DE TEXTO"
-	echo "[4]GDEBI(INSTALADOR ARQUIVOS .deb)	[22]JAVA(ORACLE)"
-	echo "[5]UBUNTU TWEAK				[23]OPENJDK(JAVA)"
-	echo "[6]UNETBOOTIN				[24]THUNDERBIRD"
-	echo "[7]ATUALIZAR SISTEMA			[25]ELEMENTARY TWEAKS"
-	echo "[8]REMOVE PACOTES			[26]GCC(COMPILADOR)"
-	echo "[9]INSTALAR LIBREOFFICE 		[27]INKSCAPE"
-	echo "[10]NUMIX ICON				[28]GPARTED"
-	echo "[11]EL FAENZA ICON 			[29]TRANSMISSION"
-	echo "[12]NUMIX UTOUCH ICON 			[30]GUFW(FIREWALL)"
-	echo "[13]TAP ICON 				[31]MONITORAMENTO DO SYSTEMA"
-	echo "[14]MOKA ICON 				[32]DEIXANDO eOS EM PT-BR"
-	echo "[15]WINE 				[33]FONTES EXTRAS"
-	echo "[16]SIMPLESCREENRECORDER 		[34]BLENDER"
-	echo "[18]ULTILIDARIO DE PARTIÇÕES 		[35]GIMP"
-	echo "					[36]SAIR"
+	echo "[1]CODEC EXTRAS				[18]ATOM EDITOR DE TEXTO"
+	echo "[2]PROGRAMAS EXTRAS(p7zip, rar..etc)	[19]BRACKETS EDITOR DE TEXTO"
+	echo "[3]FIREFOX				[20]SUBLIME TEXT EDITOR DE TEXTO"
+	echo "[4]GDEBI(INSTALADOR ARQUIVOS .deb)	[21]JAVA(ORACLE)"
+	echo "[5]UBUNTU TWEAK				[22]OPENJDK(JAVA)"
+	echo "[6]UNETBOOTIN				[23]THUNDERBIRD"
+	echo "[7]ATUALIZAR SISTEMA			[24]ELEMENTARY TWEAKS"
+	echo "[8]REMOVE PACOTES			[25]GCC(COMPILADOR)"
+	echo "[9]INSTALAR LIBREOFFICE 		[26]INKSCAPE"
+	echo "[10]NUMIX ICON				[27]GPARTED"
+	echo "[11]FAENZA ICON 			[28]TRANSMISSION"
+	echo "[12]NUMIX SHINE ICON 			[29]GUFW(FIREWALL)"
+	echo "[13]PACIFICA ICON 				[30]MONITORAMENTO DO SYSTEMA"
+	echo "[14]MOKA ICON 				[31]DEIXANDO eOS EM PT-BR"
+	echo "[15]WINE 				[32]FONTES EXTRAS"
+	echo "[16]SIMPLESCREENRECORDER 		[33]BLENDER"
+	echo "[17]ULTILIDARIO DE PARTIÇÕES 		[34]GIMP"
+	echo "					[35]SAIR"
 	echo "================================================================================"
-	read -p "DIGITE [1 a 36] -> " op
+	read -p "DIGITE [1 a 35] -> " op
 	echo
 }
 #}}}
