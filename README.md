@@ -1,3 +1,4 @@
+![Akila](https://cloud.githubusercontent.com/assets/9394147/11880009/6e8d9096-a4dd-11e5-991a-b83d0986d1ec.png)
 #Akila Project
 
 Script de instalaçao de pacotes extras para ubuntu e seus derivados.
