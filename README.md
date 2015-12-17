@@ -102,5 +102,6 @@ Akila Project vem para facilitar a vida do usuario que esta iniciando no Linux, 
 
 #Ajude Projeto
 [GitHub](https://github.com/walber-silva/akila-script)
+Site: http://walber-silva.github.io/akila-script/
 
 Copyright (c) 2015 General Public License GPL
