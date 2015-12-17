@@ -21,8 +21,6 @@ sudo akila-install
 #Descrição
 Akila Elementary vem para facilitar a vida do usuario que esta iniciando no Linux, mas tambem para o usuario avançado. Com isso trará facilidade na instalação de programas com mais rapidez sem que você precise pesquisar por tutoriais na internet. Ele vem com uma grande quatidade de programas para serem instalados no Elementary OS:
 
-### ATENÇÃO Script esta Desenvolvimento!
-
 #Ajude Projeto
 [GitHub](https://github.com/walber-silva/akila-script)
 
