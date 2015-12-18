@@ -101,6 +101,6 @@ sudo akila-install
 Akila Project vem para facilitar a vida do usuario que esta iniciando no Linux, mas tambem para o usuario avançado. Com isso trará facilidade na instalação de programas com mais rapidez sem que você precise pesquisar por tutoriais na internet. Ele vem com uma grande quatidade de programas para serem instalados.
 
 #Ajude Projeto
-[GitHub](https://github.com/walber-silva/akila-script)
+![GitHub](https://github.com/akila-project/akila-script)
 
 Copyright (c) 2015 General Public License GPL
