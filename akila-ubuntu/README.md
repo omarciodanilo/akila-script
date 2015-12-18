@@ -4,7 +4,7 @@ Script de instalaçao de pacotes extras para ubuntu e seus derivados
 
 ###Instalação
 
-git clone https://github.com/walber-silva/akila-script
+git clone https://github.com/akila-project/akila-script
 
 cd akila-script/akila-ubuntu
 
