@@ -27,7 +27,7 @@ Programas:
 
 ###Instalação Akila Ubuntu
 
-git clone https://github.com/walber-silva/akila-script
+git clone https://github.com/akila-project/akila-script
 
 cd akila-script/akila-ubuntu
 
@@ -83,7 +83,7 @@ Programas:
 
 ###Instalação Akila Elementary OS
 
-git clone https://github.com/walber-silva/akila-script
+git clone https://github.com/akila-project/akila-script
 
 cd akila-script/akila-elementary
 
