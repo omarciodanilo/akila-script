@@ -40,6 +40,6 @@ Akila Ubuntu vem para facilitar a vida do usuario que esta iniciando no Linux, m
 - INKSCAPE - MAIS RECENTE STABLE
 
 #Ajude Projeto
-[GitHub](https://github.com/walber-silva/akila-script)
+![GitHub](https://github.com/akila-project/akila-script)
 
 Copyright (c) 2015 General Public License GPL
