@@ -1,0 +1,636 @@
+#!/bin/bash
+# -*- coding: utf-8 -*-
+#================================================================
+#					AKILA SCRIPT INSTALL
+# PROJETO VOLTADO PARA FACILITAR A INSTALAÇÂO DE PROGRAMAS
+# EXTRAS NO UBUNTU E SEUS DERIVADOS.
+# OS: Ubuntu, Linux mint, xubuntu, kubuntu.......
+# GITHUB: https://github.com/walber-silva/akila-script
+#================================================================
+clear
+#VERIFICAÇÃO ROOT {{{
+select_root(){
+	if [[ ! $(whoami) = "root" ]]; then
+		echo "================================================================================"
+    	echo "OPS! VOCÊ TEM QUE EXECUTAR O SCRIPT COMO ROOT"
+		echo "================================================================================"
+    	exit 1
+	fi
+}
+#}}}
+#FUNÇÂO PARA GERAR OPÇÂO ESCOLIDA PELO USUARIO {{{
+select_op(){
+case $op in
+	1)	#INSTALANDO UBUNTU CODEC
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get install ubuntu-restricted-extras -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+	2)	#INSTALANDO XUBUNTU CODEC
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get install xubuntu-restricted-extras -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+	3)	#INSTALANDO KUBUNTU CODEC
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get install kubuntu-restricted-extras -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+	4)	#INSTALANDO GDEBI
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get install gdebi -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+			  	echo
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+			  	sleep 2
+			  	exit
+				;;
+		esac
+		;;
+	5) #INSTALANDO UBUNTU TWEAK
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:tualatrix/ppa -y && apt-get update && apt-get install ubuntu-tweak -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	*)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	6)	#INSTALANDO UNETBOOTIN
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:gezakovacs/ppa -y && apt-get update && apt-get install unetbootin -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			*)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+			esac
+			;;
+	7)	#ATUALIZANDO O SISTEMA
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get update && apt-get dist-upgrade -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			*)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	8)	#REMOVENDO PACOTE
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		read -p "DIGITE O NOME DO PACOTE PARA SER REMOVIDO -> " pack
+		read -p "DESEJA REMOVER O PACOTE $pack?[s/n] ->" packr
+		case $packr in
+			S|s)
+				echo
+				apt-get purge $pack
+				;;
+			N|n)
+			 	sleep 2
+				tela_opcoes
+				select_op
+				;;
+			  *)
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	9)	#ATUALIZAR LIBREOFFICE
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:libreoffice/ppa -y && apt-get update && apt-get dist-upgrade -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	10)	#INSTALANDO NUMIX ICON
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:numix/ppa -y && apt-get update && apt-get install numix-icon-theme-circle -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		      *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	11)	#INSTALANDO ATOM EDITOR DE TEXTO
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:webupd8tean/atom -y && apt-get update && apt-get install atom -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+	 	esac
+	 	;;
+	12)	#INSTALANDO BRACKETS
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:webupd8tean/brackets -y && apt-get update && apt-get install brackets -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	13)	#INSTALANDO SUBLIME TEXT
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:webupd8tean/sublime-text -y && apt-get update && apt-get install sublime-text-installer -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	14) #INSTALANDO JAVA ORACLE
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:webupd8tean/java -y && apt-get update && apt-get install 	oracle-java8-installer -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	15) #INSTALANDO OPENJDK
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:openjdk-r/ppa -y && apt-get update && apt-get install openjdk-8-jre -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	16) #INSTALANDO PLANK DOCK
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:ricotz/docky -y && apt-get update && apt-get install plank -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	17)	#INSTALANDO ELEMENTARY TWEAKS
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:mpstark/elementary-tweaks-daily -y && apt-get update && apt-get install elementary-tweaks -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	18)	#INSTALANDO GCC
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		apt-get install build-essential -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+			  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	19) #INSTALANDO INKSCAPE
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		add-apt-repository ppa:inkscape.dev/stable -y && apt-get && apt-get install inkscape -y
+		echo
+		echo "DESEJA INSTALAR OUTRO PACOTE?[s/n]"
+		read -p "DIGITE: " esc
+		case $esc in
+			S|s)
+				sleep 2
+				tela_opcoes
+				select_op
+				;;
+			N|n)
+				echo
+				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
+				sleep 2
+				exit
+				;;
+		  	  *)
+				echo
+				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+				echo "TENTE NOVAMENTE!"
+				sleep 2
+				exit
+				;;
+		esac
+		;;
+	20) #SAINDO SO SCRIPT
+		echo
+		echo "OBRIGADO POR BAIXAR NOSSO SCRIPT ✌ ¯\_(ツ)_/¯"
+		sleep 2
+		exit
+		;;
+	 *)	#TRATAMENTO DE ERRO
+		echo "================================================================================"
+		echo "AKILA SCRIPT INSTALL"
+		echo "================================================================================"
+		echo "OPS!VOCÊ NÃO DIGITOU O NÚMERO CORRETO [1 a 20]"
+		echo "VOCÊ NÃO DIGITOU NENHUM NUMERO"
+		echo "TENTE NOVAMENTE!"
+		sleep 2
+		exit
+		;;
+esac
+}
+#}}}
+#TELA DE OPÇÔES PARA USUARIO {{{
+tela_opcoes(){
+	echo "================================================================================"
+	echo "AKILA SCRIPT INSTALL ¯\_(ツ)_/¯"
+	echo "================================================================================"
+	echo "[1]UBUNTU CODEC EXTRAS			[11]ATOM EDITOR DE TEXTO"
+	echo "[2]XUBUNTU CODEC EXTRAS			[12]BRACKETS EDITOR DE TEXTO"
+	echo "[3]KUBUNTU CODEC EXTRAS			[13]SUBLIME TEXT EDITOR DE TEXTO"
+	echo "[4]GDEBI(INSTALADOR ARQUIVOS .deb)	[14]JAVA(ORACLE)"
+	echo "[5]UBUNTU TWEAK				[15]OPENJDK(JAVA)"
+	echo "[6]UNETBOOTIN				[16]PLANK DOCK"
+	echo "[7]ATUALIZAR SISTEMA			[17]ELEMENTARY TWEAKS"
+	echo "[8]REMOVE PACOTES			[18]GCC(COMPILADOR)"
+	echo "[9]ATUALIZAR LIBREOFFICE		[19]INKSCAPE"
+	echo "[10]NUMIX ICON				[20]SAIR"
+	echo "================================================================================"
+	read -p "DIGITE [1 a 20] -> " op
+	echo
+}
+#}}}
+#CHAMANDO TODAS AS FUNÇÔES {{{
+select_root
+tela_opcoes
+select_op
+#}}}
