@@ -7,14 +7,13 @@
 # OS: Ubuntu, Linux mint, xubuntu, kubuntu.......
 # GITHUB: https://github.com/walber-silva/akila-script
 #================================================================
-clear
 #VERIFICAÇÃO ROOT {{{
 select_root(){
 	if [[ ! $(whoami) = "root" ]]; then
 		echo "================================================================================"
     	echo "OPS! VOCÊ TEM QUE EXECUTAR O SCRIPT COMO ROOT"
 		echo "================================================================================"
-    	exit 1
+    	break
 	fi
 }
 #}}}
@@ -39,14 +38,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			  *)
 			  	echo
 			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 			  	echo "TENTE NOVAMENTE!"
 			  	sleep 2
-			  	exit
+			  	break
 				;;
 		esac
 		;;
@@ -68,14 +67,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			  *)
 			  	echo
 			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 			  	echo "TENTE NOVAMENTE!"
 			  	sleep 2
-			  	exit
+			  	break
 				;;
 		esac
 		;;
@@ -97,14 +96,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			  *)
 			  	echo
 			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 			  	echo "TENTE NOVAMENTE!"
 			  	sleep 2
-			  	exit
+			  	break
 				;;
 		esac
 		;;
@@ -126,14 +125,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			  *)
 			  	echo
 			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 			  	echo "TENTE NOVAMENTE!"
 			  	sleep 2
-			  	exit
+			  	break
 				;;
 		esac
 		;;
@@ -155,14 +154,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	*)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -184,14 +183,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			*)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 			esac
 			;;
@@ -213,14 +212,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			*)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -244,7 +243,7 @@ case $op in
 			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 			  	echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		echo
@@ -260,14 +259,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -289,14 +288,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -318,14 +317,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		      *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -347,14 +346,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 	 	esac
 	 	;;
@@ -376,14 +375,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -405,14 +404,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -434,14 +433,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -463,14 +462,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -492,14 +491,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -521,14 +520,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -550,14 +549,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 			  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -579,14 +578,14 @@ case $op in
 				echo
 				echo "OBRIGADO POR BAIXAR NOSSO SCRIPT :)"
 				sleep 2
-				exit
+				break
 				;;
 		  	  *)
 				echo
 				echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
 				echo "TENTE NOVAMENTE!"
 				sleep 2
-				exit
+				break
 				;;
 		esac
 		;;
@@ -594,7 +593,7 @@ case $op in
 		echo
 		echo "OBRIGADO POR BAIXAR NOSSO SCRIPT ✌ ¯\_(ツ)_/¯"
 		sleep 2
-		exit
+		break
 		;;
 	 *)	#TRATAMENTO DE ERRO
 		echo "================================================================================"
@@ -604,13 +603,14 @@ case $op in
 		echo "VOCÊ NÃO DIGITOU NENHUM NÚMERO"
 		echo "TENTE NOVAMENTE!"
 		sleep 2
-		exit
+		break
 		;;
 esac
 }
 #}}}
 #TELA DE OPÇÔES PARA USUARIO {{{
 tela_opcoes(){
+	clear
 	echo "================================================================================"
 	echo "			AKILA SCRIPT INSTALL ¯\_(ツ)_/¯"
 	echo "================================================================================"
@@ -631,7 +631,9 @@ tela_opcoes(){
 }
 #}}}
 #CHAMANDO TODAS AS FUNÇÔES {{{
+clear
 select_root
 tela_opcoes
 select_op
+clear
 #}}}
