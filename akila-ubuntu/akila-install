@@ -18,7 +18,7 @@ select_root(){
 	fi
 }
 #}}}
-#FUNÇÂO PARA GERAR OPÇÂO ESCOLIDA PELO USUARIO {{{
+#FUNÇÂO PARA GERAR OPÇÂO ESCOLHIDA PELO USUARIO {{{
 select_op(){
 case $op in
 	1)	#INSTALANDO UBUNTU CODEC
@@ -601,7 +601,7 @@ case $op in
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
 		echo "OPS!VOCÊ NÃO DIGITOU O NÚMERO CORRETO [1 a 20]"
-		echo "VOCÊ NÃO DIGITOU NENHUM NUMERO"
+		echo "VOCÊ NÃO DIGITOU NENHUM NÚMERO"
 		echo "TENTE NOVAMENTE!"
 		sleep 2
 		exit
