@@ -627,6 +627,7 @@ tela_opcoes(){
 	echo "================================================================================"
 	read -p "DIGITE [1 a 20] -> " op
 	echo
+	clear
 }
 #}}}
 #CHAMANDO TODAS AS FUNÇÔES {{{
