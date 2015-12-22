@@ -612,7 +612,7 @@ esac
 #TELA DE OPÇÔES PARA USUARIO {{{
 tela_opcoes(){
 	echo "================================================================================"
-	echo "AKILA SCRIPT INSTALL ¯\_(ツ)_/¯"
+	echo "			AKILA SCRIPT INSTALL ¯\_(ツ)_/¯"
 	echo "================================================================================"
 	echo "[1] UBUNTU CODEC EXTRAS			[11] ATOM EDITOR DE TEXTO"
 	echo "[2] XUBUNTU CODEC EXTRAS		[12] BRACKETS EDITOR DE TEXTO"
