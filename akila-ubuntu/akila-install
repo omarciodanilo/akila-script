@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #================================================================
 #					AKILA SCRIPT INSTALL
-# PROJETO VOLTADO PARA FACILITA A INSTALAÇÂO DE PROGRAMAS
+# PROJETO VOLTADO PARA FACILITAR A INSTALAÇÂO DE PROGRAMAS
 # EXTRAS NO UBUNTU E SEUS DERIVADOS.
 # OS: Ubuntu, Linux mint, xubuntu, kubuntu.......
 # GITHUB: https://github.com/walber-silva/akila-script
@@ -12,13 +12,13 @@ clear
 select_root(){
 	if [[ ! $(whoami) = "root" ]]; then
 		echo "================================================================================"
-    	echo "OPS!VOCÊ TEM QUE EXECUTAR SCRIPT COMO ROOT"
+    	echo "OPS! VOCÊ TEM QUE EXECUTAR O SCRIPT COMO ROOT"
 		echo "================================================================================"
     	exit 1
 	fi
 }
 #}}}
-#FUNÇÂO PARA GERA OPÇÂO ESCOLIDA PELO USUARIO {{{
+#FUNÇÂO PARA GERAR OPÇÂO ESCOLIDA PELO USUARIO {{{
 select_op(){
 case $op in
 	1)	#INSTALANDO UBUNTU CODEC
@@ -228,8 +228,8 @@ case $op in
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
-		read -p "DIGITE NOME DO PACOTE PARA SER REMOVIDO -> " pack
-		read -p "DESEJA REMOVE PACOTE $pack?[s/n] ->" packr
+		read -p "DIGITE O NOME DO PACOTE PARA SER REMOVIDO -> " pack
+		read -p "DESEJA REMOVER O PACOTE $pack?[s/n] ->" packr
 		case $packr in
 			S|s)
 				echo
@@ -241,7 +241,8 @@ case $op in
 				select_op
 				;;
 			  *)
-			  	echo "DIGITOU A OPÇÃO ERRADA TENTE NOVAMENTE!"
+			  	echo "VOCÊ NÃO DIGITOU CORRETAMENTE!"
+			  	echo "TENTE NOVAMENTE!"
 				sleep 2
 				exit
 				;;
@@ -591,7 +592,7 @@ case $op in
 		;;
 	20) #SAINDO SO SCRIPT
 		echo
-		echo "OBRIGADO POR BAIXA NOSSO SCRIPT ✌ ¯\_(ツ)_/¯"
+		echo "OBRIGADO POR BAIXAR NOSSO SCRIPT ✌ ¯\_(ツ)_/¯"
 		sleep 2
 		exit
 		;;
@@ -599,8 +600,8 @@ case $op in
 		echo "================================================================================"
 		echo "AKILA SCRIPT INSTALL"
 		echo "================================================================================"
-		echo "OPS!VOCÊ NÃO DIGITOU NUMERO CORRETO [1 a 20]"
-		echo "NÃO DIGITOU NENHUM NUMERO"
+		echo "OPS!VOCÊ NÃO DIGITOU O NÚMERO CORRETO [1 a 20]"
+		echo "VOCÊ NÃO DIGITOU NENHUM NUMERO"
 		echo "TENTE NOVAMENTE!"
 		sleep 2
 		exit
